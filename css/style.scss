@@ -1,0 +1,607 @@
+@charset "UTF-8";
+$red: #D10037;
+$white: #fff;
+$text: #514F4F;
+
+#es-rc #es-mixa.es-mixa {
+    font-family: "Montserrat", sans-serif;
+    color: #000;
+    max-width: 990px;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 500;
+
+    * {
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+    }
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+
+    sup {
+        font-size: 0.6em;
+    }
+    @mixin text {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    }
+
+    @mixin img {
+        margin: 0 auto;
+        display: block;
+        max-width: 100%;
+    }
+
+    .es-kv {
+      &__img {
+        @include img;
+      }
+      &__mobile {
+        display: block;
+      }
+      &__desktop {
+        display: none;
+      }
+      &__wrapper {
+        margin: 0 auto;
+        position: relative;
+        width: 100%;
+      }
+      &__left {
+        text-align: center;
+        padding: 20px 15px;
+      }
+      &__logo {
+        @include img;
+      }
+      &__new {
+        @include text;
+        width: fit-content;
+        margin: 20px auto 0;
+        text-transform: uppercase;
+        background-color: $red;
+        color: $white;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        padding: 5px 10px;
+      }
+      &__title {
+        @include text;
+        text-transform: uppercase;
+        color: $red;
+        font-size: 25px;
+        font-weight: 800;
+        text-align: center;
+        padding: 10px;
+      }
+      &__text {
+        @include text;
+        color: $text;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 10px;
+      }
+      &__feature {
+        @include text;
+        width: 100%;
+        margin: 20px auto 20px;
+        background-color: $red;
+        color: $white;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        padding: 10px;
+      }
+      &__right {
+        margin: 0 auto;
+        max-width: 80%;
+      }
+      &__disc {
+        @include text;
+        color: $text;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 300;
+        padding: 10px;
+        margin-top: 32px;
+      }
+    }
+
+    .es-ingr {
+      &__img {
+        @include img;
+      }
+      &__wrapper {
+        position: relative;
+      }
+      &__title {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        @include text;
+        width: fit-content;
+        margin: 0 auto;
+        background-color: $red;
+        color: $white;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        padding: 5px 10px;
+        
+      }
+      &__percent {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        @include text;
+        font-size: 40px;
+        color: $red;
+        font-weight: 800;
+      }
+      &__names {
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+        @include text;
+        font-size: 15px;
+        color: $red;
+        text-transform: uppercase;
+        font-weight: 700;
+
+      }
+      &__functions {
+        position: absolute;
+        top: 82%;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        flex-wrap: nowrap;
+        width: 80%;
+        justify-content: space-around;
+        @include text;
+        font-size: 12px;
+        color: $text;
+        font-weight: 700;
+      }
+      &__function {
+        width: 33%;
+        text-align: center;
+      }
+    }
+
+    .es-use {
+      &__img {
+        @include img;
+      }
+      &__title {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        @include text;
+        width: fit-content;
+        margin: 0 auto;
+        background-color: $red;
+        color: $white;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        padding: 5px 10px;
+        
+      }
+      &__tick {
+        width: 24px;
+        height: 24px;
+      }
+      &__wrapper {
+        position: relative;
+      }
+      &__table {
+        margin: 15px auto;
+        display: flex;
+        flex-wrap: nowrap;
+        width: 90%;
+        background-color: rgba($color: #000000, $alpha: 0.26);
+      }
+      &__td {
+        width: 50%;
+        padding: 10px 10px 0;
+      }
+      &__item {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 5px 0; 
+      }
+      &__text {
+        @include text;
+        color: $white;
+        font-size: 12px;
+      }
+    }
+
+    .es-boxes {
+      &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      &__img {
+        @include img;
+      }
+      &__box {
+        position: relative;
+      }
+      &__texts {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+      }
+      &__title {
+        @include text;
+        text-align: center;
+        font-weight: 700;
+        font-size: 20px;
+        &--white {
+          color: $white;
+        }
+        &--red {
+          color: $red;
+        }
+      }
+      &__button {
+        @include text;
+        background-color: $red;
+        padding: 7px 25px;
+        margin-top: 10px;
+        color: $white;
+      }
+    }
+
+    .es-cross {
+      &__img {
+        @include img;
+      }
+      &__mobile {
+        display: block;
+      }
+      &__desktop {
+        display: none;
+      }
+      &__wrapper {
+        position: relative;
+      }
+      &__title {
+        @include text;
+        background-color: $red;
+        color: $white;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+        padding: 5px 10px;
+        position: absolute;
+        top: 5%;
+        right: 0;
+      }
+      &__product {
+        position: absolute;
+        transform: translate(-50%);
+        text-align: center;
+        &--1 {
+          top: 7%;
+          left: 15%;
+        }
+        &--2 {
+          top: 44%;
+          left: 36%;
+        }
+        &--3 {
+          top: 61%;
+          left: 73%;
+        }
+        &--4 {
+          top: 43%;
+          right: -11%;
+        }
+      }
+      &__name {
+        @include text;
+        font-size: 9px;
+        color: $red
+      }
+      &__desc {
+        @include text;
+        font-size: 9px;
+        color: $text;
+      }
+    }
+
+
+    @media (min-width: 450px) {
+      .es-ingr {
+        &__title {
+          font-size: 20px;
+        }
+        &__percent {
+          font-size: 50px;
+        }
+        &__names {
+          font-size: 20px;
+        }
+      }
+      .es-use {
+        &__title {
+          font-size: 20px;
+        }
+      }
+      .es-cross {
+        &__title {
+          font-size: 18px;
+        }
+        &__name {
+          font-size: 11px;
+        }
+        &__desc {
+          font-size: 11px;
+        }
+      }
+    }  
+
+    @media (min-width: 600px) {
+      .es-kv {
+        &__mobile {
+          display: none;
+        }
+        &__desktop {
+          display: block;
+        }
+        &__left {
+          position: absolute;
+          width: 33%;
+          top: 1%;
+          left: 1%;
+          text-align: left;
+          padding: 0;
+        }
+        &__logo {
+          margin: 0;
+          width: 60%;
+        }
+        &__new {
+          margin: 10px 0;
+          font-size: 15px;
+        }
+        &__title {
+          margin: 0;
+          text-align: left;
+          padding: 0;
+          font-size: 20px;
+        }
+        &__text {
+          text-align: left;
+          padding: 0;
+          font-size: 11px;
+        }
+        &__right {
+          position: absolute;
+          right: 4%;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 33%;
+        }
+        &__feature {
+          padding: 10px;
+          margin: 10px 0;
+          font-size: 14px;
+        }
+        &__disc {
+          position: absolute;
+          width: 95%;
+          bottom: 1%;
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 8px;
+        }
+      }
+      .es-ingr {
+        &__title {
+          font-size: 20px;
+          top: 16%;
+        }
+        &__percent {
+          font-size: 60px;
+        }
+        &__names {
+          font-size: 25px;
+        }
+        &__functions {
+          top: 80%;
+        }
+      }
+      .es-use {
+        &__title {
+          width: 60%;
+        }
+        &__table {
+          width: 60%;
+          position: absolute;
+          top: 32%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+      }
+      .es-boxes {
+        &__wrapper {
+          flex-wrap: nowrap;
+        }
+      }
+      .es-cross {
+        &__mobile {
+          display: none;
+        }
+        &__desktop {
+          display: block;
+        }
+        &__title {
+          font-size: 22px;
+        }
+        &__product {
+          position: absolute;
+          transform: translate(-50%);
+          text-align: center;
+          &--1 {
+            top: 20%;
+            left: 11%;
+          }
+          &--2 {
+            top: 44%;
+            left: 40.5%;
+          }
+          &--3 {
+            top: 61%;
+            left: 65%;
+          }
+          &--4 {
+            top: 43%;
+            left: 77%;
+            right: unset;
+          }
+        }
+      }
+      
+    }
+
+    @media (min-width: 768px) {
+      .es-kv {
+        &__left {
+          left: 3%;
+          top: 3%;
+        }
+        &__new {
+          font-size: 18px;
+        }
+        &__title {
+          font-size: 25px;
+        }
+        &__text {
+          font-size: 12px;
+        }
+        &__disc {
+          font-size: 9px;
+        }
+        &__feature {
+          font-size: 16px;
+        }
+      }
+      .es-ingr {
+        &__title {
+          font-size: 20px;
+          top: 16%;
+        }
+        &__percent {
+          font-size: 80px;
+        }
+        &__names {
+          font-size: 30px;
+        }
+        &__functions {
+          top: 80%;
+          width: 74%;
+        }
+      }
+      .es-use {
+        &__title {
+          font-size: 25px;
+        }
+        &__table {
+          top: 32%;
+        }
+      }
+      .es-cross {
+        &__title {
+          font-size: 30px;
+        }
+        &__name {
+          font-size: 12px;
+        }
+        &__desc {
+          font-size: 12px;
+        }
+      }
+    }
+    @media (min-width: 900px) {
+      .es-kv {
+        &__left {
+          top: 5%;
+        }
+        &__new {
+          font-size: 20px;
+        }
+        &__title {
+          font-size: 28px;
+        }
+        &__text {
+          font-size: 12px;
+        }
+        &__disc {
+          font-size: 9px;
+        }
+        &__feature {
+          font-size: 18px;
+        }
+
+      }
+      .es-ingr {
+        &__title {
+          font-size: 25px;
+          top: 16%;
+        }
+        &__percent {
+          font-size: 105px;
+        }
+        &__names {
+          font-size: 35px;
+        }
+        &__functions {
+          top: 80%;
+          width: 74%;
+        }
+      }
+      .es-use {
+        &__title {
+          font-size: 25px;
+          top: 23%;
+        }
+        &__table {
+
+          top: 37%;
+
+        }
+      }
+      .es-cross {
+        &__title {
+          font-size: 32px;
+        }
+        &__name {
+          font-size: 14px;
+        }
+        &__desc {
+          font-size: 14px;
+        }
+      }
+
+
+    }
+}
