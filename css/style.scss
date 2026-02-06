@@ -108,7 +108,7 @@ $text: #514F4F;
       }
       &__disc {
         @include text;
-        color: $text;
+        color: #000;
         text-align: center;
         font-size: 10px;
         font-weight: 300;
@@ -159,7 +159,7 @@ $text: #514F4F;
         font-size: 15px;
         color: $red;
         text-transform: uppercase;
-        font-weight: 700;
+        font-weight: 900;
 
       }
       &__functions {
@@ -252,7 +252,7 @@ $text: #514F4F;
       &__title {
         @include text;
         text-align: center;
-        font-weight: 700;
+        font-weight: 800;
         font-size: 20px;
         &--white {
           color: $white;
@@ -264,8 +264,9 @@ $text: #514F4F;
       &__button {
         @include text;
         background-color: $red;
-        padding: 7px 25px;
+        padding: 14px 20px;
         margin-top: 10px;
+        font-size: 18px;
         color: $white;
       }
     }
@@ -319,10 +320,12 @@ $text: #514F4F;
       &__name {
         @include text;
         font-size: 9px;
+        font-weight: 700;
         color: $red
       }
       &__desc {
         @include text;
+        font-weight: 500;
         font-size: 9px;
         color: $text;
       }
@@ -545,18 +548,19 @@ $text: #514F4F;
       .es-kv {
         &__left {
           top: 5%;
+          width: 35%;
         }
         &__new {
-          font-size: 20px;
+          font-size: 25px;
         }
         &__title {
-          font-size: 28px;
+          font-size: 35px;
         }
         &__text {
-          font-size: 12px;
+          font-size: 15px;
         }
         &__disc {
-          font-size: 9px;
+          font-size: 11px;
         }
         &__feature {
           font-size: 18px;
@@ -565,8 +569,8 @@ $text: #514F4F;
       }
       .es-ingr {
         &__title {
-          font-size: 25px;
-          top: 16%;
+          font-size: 35px;
+          top: 20%;
         }
         &__percent {
           font-size: 105px;
@@ -581,12 +585,13 @@ $text: #514F4F;
       }
       .es-use {
         &__title {
-          font-size: 25px;
+          font-size: 35px;
           top: 23%;
+          width: 56%;
         }
         &__table {
-
-          top: 37%;
+          width: 56%;
+          top: 43%;
 
         }
       }
