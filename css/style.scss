@@ -230,6 +230,14 @@ $text: #514F4F;
         color: $white;
         font-size: 12px;
       }
+      &__disc {
+        @include text;
+        color: #000;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 300;
+        padding: 10px;
+      }
     }
 
     .es-boxes {
@@ -436,11 +444,19 @@ $text: #514F4F;
       .es-use {
         &__title {
           width: 60%;
+          top: 5%;
         }
         &__table {
           width: 60%;
           position: absolute;
-          top: 32%;
+          top: 22%;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        &__disc {
+          color: $white;
+          position: absolute;
+          bottom: 0%;
           left: 50%;
           transform: translateX(-50%);
         }
@@ -527,9 +543,10 @@ $text: #514F4F;
       .es-use {
         &__title {
           font-size: 25px;
+          top: 25%;
         }
         &__table {
-          top: 32%;
+          top: 41%;
         }
       }
       .es-cross {
